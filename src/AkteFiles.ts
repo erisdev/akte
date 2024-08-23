@@ -1,13 +1,13 @@
-import { NotFoundError } from "./errors";
-import { type Awaitable } from "./types";
+import { NotFoundError } from "./errors.js";
+import { type Awaitable } from "./types.js";
 
-import { createDebugger } from "./lib/createDebugger";
-import { pathToFilePath } from "./lib/pathToFilePath";
-import { toReadonlyMap } from "./lib/toReadonlyMap";
+import { createDebugger } from "./lib/createDebugger.js";
+import { pathToFilePath } from "./lib/pathToFilePath.js";
+import { toReadonlyMap } from "./lib/toReadonlyMap.js";
 
 /* eslint-disable @typescript-eslint/no-unused-vars, unused-imports/no-unused-imports */
 
-import type { AkteApp } from "./AkteApp";
+import type { AkteApp } from "./AkteApp.js";
 
 /* eslint-enable @typescript-eslint/no-unused-vars, unused-imports/no-unused-imports */
 

@@ -1,4 +1,4 @@
-import { aktePlugin } from "./aktePlugin";
+import { aktePlugin } from "./aktePlugin.js";
 
 export default aktePlugin;
-export type { Options } from "./types";
+export type { Options } from "./types.js";

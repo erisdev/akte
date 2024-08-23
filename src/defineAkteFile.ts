@@ -3,8 +3,8 @@ import {
 	type FilesBulkDataFn,
 	type FilesDataFn,
 	type FilesDefinition,
-} from "./AkteFiles";
-import type { Empty } from "./types";
+} from "./AkteFiles.js";
+import type { Empty } from "./types.js";
 
 type FileDefinition<TGlobalData, TData> = Omit<
 	FilesDefinition<TGlobalData, never[], TData>,

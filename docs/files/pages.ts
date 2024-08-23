@@ -4,8 +4,8 @@ import * as fs from "node:fs/promises";
 import { defineAkteFiles } from "akte";
 import { globby } from "globby";
 
-import { markdownToHTML } from "../akte/markdownToHTML";
-import { base } from "../layouts/base";
+import { markdownToHTML } from "../akte/markdownToHTML.js";
+import { base } from "../layouts/base.js";
 
 const contentDir = path.resolve(__dirname, "../content");
 

@@ -1,9 +1,9 @@
 import { type PluginOption } from "vite";
 
-import { createDebugger } from "../lib/createDebugger";
-import { serverPlugin } from "./plugins/serverPlugin";
-import { buildPlugin } from "./plugins/buildPlugin";
-import type { Options, ResolvedOptions } from "./types";
+import { createDebugger } from "../lib/createDebugger.js";
+import { serverPlugin } from "./plugins/serverPlugin.js";
+import { buildPlugin } from "./plugins/buildPlugin.js";
+import type { Options, ResolvedOptions } from "./types.js";
 
 const MINIFY_HTML_DEFAULT_OPTIONS = {
 	collapseBooleanAttributes: true,

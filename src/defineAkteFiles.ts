@@ -3,9 +3,9 @@ import {
 	type FilesBulkDataFn,
 	type FilesDataFn,
 	type FilesDefinition,
-} from "./AkteFiles";
+} from "./AkteFiles.js";
 
-import type { Empty } from "./types";
+import type { Empty } from "./types.js";
 
 /**
  * Creates an Akte files instance.

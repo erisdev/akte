@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import akte from "akte/vite";
 
-import { app } from "./akte.app";
+import { app } from "./akte.app.js";
 
 export default defineConfig({
 	build: {

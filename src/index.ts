@@ -1,8 +1,8 @@
-export type { Config, AkteApp } from "./AkteApp";
-export type { AkteFiles } from "./AkteFiles";
+export type { Config, AkteApp } from "./AkteApp.js";
+export type { AkteFiles } from "./AkteFiles.js";
 
-export { defineAkteApp } from "./defineAkteApp";
-export { defineAkteFile } from "./defineAkteFile";
-export { defineAkteFiles } from "./defineAkteFiles";
+export { defineAkteApp } from "./defineAkteApp.js";
+export { defineAkteFile } from "./defineAkteFile.js";
+export { defineAkteFiles } from "./defineAkteFiles.js";
 
-export { NotFoundError } from "./errors";
+export { NotFoundError } from "./errors.js";

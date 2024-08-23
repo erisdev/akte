@@ -1,4 +1,4 @@
-import { commandsAndFlags } from "./commandsAndFlags";
+import { commandsAndFlags } from "./commandsAndFlags.js";
 
 const hasFlag = (...flags: string[]): boolean => {
 	for (const flag of flags) {

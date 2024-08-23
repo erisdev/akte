@@ -4,11 +4,11 @@ import { mkdir, writeFile } from "node:fs/promises";
 import type { Plugin } from "vite";
 import httpProxy from "http-proxy";
 
-import type { ResolvedOptions } from "../types";
-import { createAkteViteCache } from "../createAkteViteCache";
-import { NotFoundError } from "../../errors";
-import { pathToFilePath } from "../../lib/pathToFilePath";
-import { createDebugger } from "../../lib/createDebugger";
+import type { ResolvedOptions } from "../types.js";
+import { createAkteViteCache } from "../createAkteViteCache.js";
+import { NotFoundError } from "../../errors.js";
+import { pathToFilePath } from "../../lib/pathToFilePath.js";
+import { createDebugger } from "../../lib/createDebugger.js";
 
 const debug = createDebugger("akte:vite:server", true);
 

@@ -1,4 +1,4 @@
-import { defineAkteFiles } from "../../src";
+import { defineAkteFiles } from "../../src/index.js";
 
 export const jsons = defineAkteFiles().from({
 	path: "/:slug.json",

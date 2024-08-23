@@ -1,5 +1,5 @@
 import { expectTypeOf, it } from "vitest";
-import { defineAkteFile } from "../src";
+import { defineAkteFile } from "../src/index.js";
 
 it("infers data from data", () => {
 	defineAkteFile().from({

@@ -1,6 +1,6 @@
 import { expect, it, vi } from "vitest";
 
-import { defineAkteFile, defineAkteFiles } from "../src";
+import { defineAkteFile, defineAkteFiles } from "../src/index.js";
 
 it("caches bulk data", () => {
 	const bulkDataFn = vi.fn().mockImplementation(() => ({

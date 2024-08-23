@@ -1,4 +1,4 @@
-import { AkteApp, type Config } from "./AkteApp";
+import { AkteApp, type Config } from "./AkteApp.js";
 
 /**
  * Creates an Akte app from given configuration.

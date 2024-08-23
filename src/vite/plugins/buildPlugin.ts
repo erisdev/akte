@@ -5,10 +5,10 @@ import { existsSync } from "node:fs";
 
 import type { Plugin } from "vite";
 
-import type { ResolvedOptions } from "../types";
-import { createAkteViteCache } from "../createAkteViteCache";
-import { pkg } from "../../lib/pkg";
-import { createDebugger } from "../../lib/createDebugger";
+import type { ResolvedOptions } from "../types.js";
+import { createAkteViteCache } from "../createAkteViteCache.js";
+import { pkg } from "../../lib/pkg.js";
+import { createDebugger } from "../../lib/createDebugger.js";
 
 let isServerRestart = false;
 

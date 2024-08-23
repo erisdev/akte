@@ -1,14 +1,14 @@
 import { expect, it, vi } from "vitest";
 import { vol } from "memfs";
 
-import { defineAkteApp } from "../src";
-import { runCLI } from "../src/runCLI";
+import { defineAkteApp } from "../src/index.js";
+import { runCLI } from "../src/runCLI.js";
 
-import { index } from "./__fixtures__";
-import { about } from "./__fixtures__/about";
-import { pages } from "./__fixtures__/pages";
-import { posts } from "./__fixtures__/posts";
-import { jsons } from "./__fixtures__/jsons";
+import { index } from "./__fixtures__/index.js";
+import { about } from "./__fixtures__/about.js";
+import { pages } from "./__fixtures__/pages.js";
+import { posts } from "./__fixtures__/posts.js";
+import { jsons } from "./__fixtures__/jsons.js";
 
 it("builds product upon build command", async () => {
 	const app = defineAkteApp({

@@ -2,7 +2,7 @@ import { type PrismicDocument, createClient } from "@prismicio/client";
 import fetch from "node-fetch";
 
 import { defineAkteFiles } from "akte";
-import { basic } from "../../layouts/basic";
+import { basic } from "../../layouts/basic.js";
 
 const client = createClient("lihbr", {
 	routes: [

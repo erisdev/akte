@@ -1,6 +1,6 @@
 import { expect, it, vi } from "vitest";
 
-import { defineAkteFiles } from "../src";
+import { defineAkteFiles } from "../src/index.js";
 
 it("caches data", () => {
 	const dataFn = vi.fn().mockImplementation(() => true);

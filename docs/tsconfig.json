@@ -3,17 +3,17 @@
 		"strict": true,
 		"skipLibCheck": true,
 
-		"target": "esnext",
-		"module": "esnext",
+		"target": "ES2022",
+		"module": "Node16",
 		"declaration": false,
-		"moduleResolution": "node",
+		"moduleResolution": "Node16",
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 
 		"forceConsistentCasingInFileNames": true,
 		"jsx": "preserve",
-		"lib": ["esnext", "dom"],
+		"lib": ["ES2023", "DOM"],
 		"types": ["node"]
 	},
 	"exclude": ["node_modules", "dist", "examples"]

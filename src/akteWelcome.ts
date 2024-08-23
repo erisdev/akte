@@ -2,9 +2,9 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { createRequire } from "node:module";
 
-import { __PRODUCTION__ } from "./lib/__PRODUCTION__";
-import { defineAkteFiles } from "./defineAkteFiles";
-import { NotFoundError } from "./errors";
+import { __PRODUCTION__ } from "./lib/__PRODUCTION__.js";
+import { defineAkteFiles } from "./defineAkteFiles.js";
+import { NotFoundError } from "./errors.js";
 
 /**
  * Akte welcome page shown in development when the Akte app does not have any

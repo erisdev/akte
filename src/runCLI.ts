@@ -1,9 +1,9 @@
-import { type AkteApp } from "./AkteApp";
+import { type AkteApp } from "./AkteApp.js";
 
-import { commandsAndFlags } from "./lib/commandsAndFlags";
-import { createDebugger } from "./lib/createDebugger";
-import { hasHelp, hasVersion } from "./lib/hasFlag";
-import { pkg } from "./lib/pkg";
+import { commandsAndFlags } from "./lib/commandsAndFlags.js";
+import { createDebugger } from "./lib/createDebugger.js";
+import { hasHelp, hasVersion } from "./lib/hasFlag.js";
+import { pkg } from "./lib/pkg.js";
 
 const debugCLI = createDebugger("akte:cli");
 

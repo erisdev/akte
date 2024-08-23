@@ -1,6 +1,6 @@
 import debug from "debug";
-import { hasHelp, hasSilent, hasVersion } from "./hasFlag";
-import { isCLI } from "./isCLI";
+import { hasHelp, hasSilent, hasVersion } from "./hasFlag.js";
+import { isCLI } from "./isCLI.js";
 
 type DebuggerFn = (msg: unknown, ...args: unknown[]) => void;
 type Debugger = DebuggerFn & {

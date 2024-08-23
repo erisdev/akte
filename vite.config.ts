@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 import sdk from "vite-plugin-sdk";
 import { minify } from "html-minifier-terser";
 
-import { app } from "./docs/akte.app";
+import { app } from "./docs/akte.app.js";
 
 const MINIFY_HTML_OPTIONS = {
 	collapseBooleanAttributes: true,

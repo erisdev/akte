@@ -1,5 +1,5 @@
 import { it } from "vitest";
-import { defineAkteApp, defineAkteFiles } from "../src";
+import { defineAkteApp, defineAkteFiles } from "../src/index.js";
 
 const noGlobalData = defineAkteFiles().from({
 	path: "/:slug",

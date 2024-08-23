@@ -1,4 +1,4 @@
-import { type Plugin, type Processor, unified } from "unified";
+import { type Plugin, type Processor, unified, } from "unified";
 
 import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
@@ -10,15 +10,11 @@ import remarkRehype from "remark-rehype";
 
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeToc from "rehype-toc";
+import rehypeToc, { type Options as RehypeTocOptions } from "rehype-toc";
 import rehypeStringify from "rehype-stringify";
 
 import { common, createStarryNight } from "@wooorm/starry-night";
-
-// @ts-expect-error - Cannot resolve type
 import ignoreGrammar from "@wooorm/starry-night/source.gitignore";
-
-// @ts-expect-error - Cannot resolve type
 import tsxGrammar from "@wooorm/starry-night/source.tsx";
 import { visit } from "unist-util-visit";
 import { toString } from "hast-util-to-string";
@@ -177,7 +173,7 @@ export const markdownToHTML = async <TMatter extends Record<string, unknown>>(
 
 			.use(rehypeSlug)
 			.use(rehypeAutolinkHeadings, { behavior: "wrap" })
-			.use(rehypeToc, {
+			.use(rehypeToc as unknown as Plugin<[RehypeTocOptions]>, {
 				headings: ["h2", "h3"],
 				cssClasses: {
 					list: "",

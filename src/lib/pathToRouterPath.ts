@@ -1,4 +1,4 @@
-import { pathToFilePath } from "./pathToFilePath";
+import { pathToFilePath } from "./pathToFilePath.js";
 
 export const pathToRouterPath = (path: string): string => {
 	const filePath = pathToFilePath(path);

@@ -1,4 +1,4 @@
-import { defineAkteFile } from "../../src";
+import { defineAkteFile } from "../../src/index.js";
 
 export const about = defineAkteFile().from({
 	path: "/about",

@@ -1,7 +1,7 @@
 import { defineAkteFiles } from "akte";
-import { basic } from "../../layouts/basic";
+import { basic } from "../../layouts/basic.js";
 
-export const catchAll = defineAkteFiles().from({
+export const catchAll = defineAkteFiles<unknown>().from({
 	path: "/catch-all/**",
 	bulkData() {
 		return {

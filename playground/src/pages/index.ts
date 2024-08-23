@@ -1,7 +1,7 @@
 import { defineAkteFile } from "akte";
-import { basic } from "../layouts/basic";
+import { basic } from "../layouts/basic.js";
 
-export const index = defineAkteFile().from({
+export const index = defineAkteFile<unknown, number>().from({
 	path: "/",
 	async data() {
 		await new Promise((resolve) => setTimeout(resolve, 2000));

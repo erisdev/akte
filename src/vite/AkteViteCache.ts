@@ -1,9 +1,9 @@
 import { dirname, resolve } from "node:path";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 
-import type { AkteFiles } from "../AkteFiles";
-import { type Awaitable } from "../types";
-import { pathToFilePath } from "../lib/pathToFilePath";
+import type { AkteFiles } from "../AkteFiles.js";
+import { type Awaitable } from "../types.js";
+import { pathToFilePath } from "../lib/pathToFilePath.js";
 
 const GLOBAL_DATA = "app.globalData";
 const DATA = "file.data";

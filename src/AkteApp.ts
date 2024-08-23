@@ -3,21 +3,21 @@ import { mkdir, writeFile } from "node:fs/promises";
 
 import { type MatchedRoute, type RadixRouter, createRouter } from "radix3";
 
-import type { AkteFiles } from "./AkteFiles";
-import type { Awaitable, GlobalDataFn } from "./types";
-import { NotFoundError } from "./errors";
-import { runCLI } from "./runCLI";
-import { akteWelcome } from "./akteWelcome";
+import type { AkteFiles } from "./AkteFiles.js";
+import type { Awaitable, GlobalDataFn } from "./types.js";
+import { NotFoundError } from "./errors.js";
+import { runCLI } from "./runCLI.js";
+import { akteWelcome } from "./akteWelcome.js";
 
-import { __PRODUCTION__ } from "./lib/__PRODUCTION__";
-import { createDebugger } from "./lib/createDebugger";
-import { pathToRouterPath } from "./lib/pathToRouterPath";
-import { isCLI } from "./lib/isCLI";
+import { __PRODUCTION__ } from "./lib/__PRODUCTION__.js";
+import { createDebugger } from "./lib/createDebugger.js";
+import { pathToRouterPath } from "./lib/pathToRouterPath.js";
+import { isCLI } from "./lib/isCLI.js";
 
 /* eslint-disable @typescript-eslint/no-unused-vars, unused-imports/no-unused-imports */
 
-import type { defineAkteFile } from "./defineAkteFile";
-import type { defineAkteFiles } from "./defineAkteFiles";
+import type { defineAkteFile } from "./defineAkteFile.js";
+import type { defineAkteFiles } from "./defineAkteFiles.js";
 
 /* eslint-enable @typescript-eslint/no-unused-vars, unused-imports/no-unused-imports */
 

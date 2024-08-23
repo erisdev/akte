@@ -1,6 +1,6 @@
 import type { Options as MinifyHTMLOptions } from "html-minifier-terser";
 
-import { type AkteApp } from "../AkteApp";
+import { type AkteApp } from "../AkteApp.js";
 
 /** Akte Vite plugin options. */
 export type Options<TGlobalData> = {
